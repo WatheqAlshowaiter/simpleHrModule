@@ -72,7 +72,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
     color: #212529;
-    text-align: left;
+    text-align: right;
     background-color: #f8fafc;
 }
 
@@ -2225,13 +2225,13 @@ textarea.form-control {
 .form-check {
     position: relative;
     display: block;
-    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
 
 .form-check-input {
     position: absolute;
     margin-top: 0.3rem;
-    margin-left: -1.25rem;
+    margin-right: -1.25rem;
 }
 .form-check-input[disabled] ~ .form-check-label,
 .form-check-input:disabled ~ .form-check-label {
@@ -2246,13 +2246,13 @@ textarea.form-control {
     display: inline-flex;
     align-items: center;
     padding-left: 0;
-    margin-right: 0.75rem;
+    margin-left: 0.75rem;
 }
 .form-check-inline .form-check-input {
     position: static;
     margin-top: 0;
-    margin-right: 0.3125rem;
-    margin-left: 0;
+    margin-left: 0.3125rem;
+    margin-right: 0;
 }
 
 .valid-feedback {
@@ -2560,8 +2560,8 @@ textarea.form-control.is-invalid {
         position: relative;
         flex-shrink: 0;
         margin-top: 0;
-        margin-right: 0.25rem;
-        margin-left: 0;
+        margin-left: 0.25rem;
+        margin-right: 0;
     }
     .form-inline .custom-control {
         align-items: center;

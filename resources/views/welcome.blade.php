@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -226,6 +227,10 @@
             text-align: center
         }
 
+        .text-right {
+            text-align: right;
+        }
+
         .text-gray-200 {
             --text-opacity: 1;
             color: #edf2f7;
@@ -411,25 +416,25 @@
 
 <body class="antialiased">
     <div
-        class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+        class="relative flex items-top justify-left min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4">
         @if (Route::has('login'))
-            <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+            <div class="fixed top-0 px-6 py-4 sm:block ml-8">
                 @auth
-                    <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
+                    <a href="{{ url('/home') }}" class="text-lg text-gray-700 dark:text-gray-500 underline font-semibold">لوحة التحكم</a>
                 @else
-                    <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">دخول</a>
+                    <a href="{{ route('login') }}" class="text-lg text-gray-700 dark:text-gray-500 underline font-semibold">دخول</a>
 
                     @if (Route::has('register'))
                         <a href="{{ route('register') }}"
-                            class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">حساب جديد</a>
+                            class="ml-4 text-lg text-gray-700 dark:text-gray-500 underline font-semibold">حساب جديد</a>
                     @endif
                 @endauth
             </div>
         @endif
 
-        <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-            <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                <h1>مشروع الموارد البشرية</h1>
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-center pt-8 mx-auto ">
+                <h1 class="text-right mr-2">{{ 'نظام إدارة الموارد البشرية' }}</h1>
             </div>
         </div>
     </div>
