@@ -31,5 +31,5 @@ for more information about the database schema, please visit this [link](https:/
 
 This is part of the BlackGem Tech task.
 
-Unfortunately, I couldn't complete the project because of the shortage of time. I hope that the first steps I put in this
+**Unfortunately**, I couldn't complete the project because of the shortage of time. I hope that the first steps I put in this
 project would give you some thoughts about my technical skills.
